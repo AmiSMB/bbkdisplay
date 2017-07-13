@@ -1,0 +1,49 @@
+{
+  "name": "cubex/framework",
+  "description": "Cubex Framework",
+  "keywords": [
+    "framework",
+    "cubex"
+  ],
+  "homepage": "http://cubex.io",
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "Brooke Bryan",
+      "email": "brooke@bajb.net",
+      "homepage": "http://www.bajb.net"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "psr/log": "~1.0",
+    "illuminate/container": "~4.2",
+    "illuminate/support": "~4.2",
+    "illuminate/cookie": "~4.2",
+    "illuminate/encryption": "~4.2",
+    "monolog/monolog": "~1.10",
+    "packaged/figlet": "~0",
+    "packaged/config": "~1.0",
+    "packaged/helpers": "~1.0",
+    "packaged/api": "~0.5",
+    "symfony/http-foundation": "~2.5",
+    "symfony/http-kernel": "~2.5",
+    "symfony/console": "~2.5",
+    "symfony/translation": "~2.5",
+    "phpdocumentor/reflection-docblock": "~2.0"
+  },
+  "require-dev": {
+    "stack/builder": "~1.0",
+    "mustache/mustache": "*",
+    "mockery/mockery": "*",
+    "guzzlehttp/guzzle": "~5.2",
+    "geoip2/geoip2": "~2.1",
+    "satooshi/php-coveralls": "~1.0",
+    "phpunit/phpunit": "~4.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "Cubex\\": "src/"
+    }
+  }
+}
