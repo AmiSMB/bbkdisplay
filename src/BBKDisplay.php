@@ -1,5 +1,5 @@
 <?php
-namespace BBKDisplay;
+namespace AmiSMB\BBKDisplay;
 
 use Cubex\Http\Response;
 use Cubex\Kernel\CubexKernel;
@@ -35,6 +35,7 @@ class BBKDisplay extends CubexKernel
    */
   public function renderHello()
   {
-    echo "Hello World";
+    $hello = null;
+    echo "Hello World" . $hello->txt;
   }
 }

@@ -11,9 +11,9 @@
     }
   ],
   "require": {
-    "cubex/framework": "~2.1",
-    "packaged/dispatch": "~1.0",
-    "stack/builder": "~1.0"
+    "cubex/framework": "2.5.0",
+    "packaged/dispatch": "~1.5.0",
+    "stack/builder": "~1.0.4"
   },
   "require-dev": {
     "satooshi/php-coveralls": "~0.6",
@@ -21,7 +21,7 @@
   },
   "autoload": {
     "psr-4": {
-      "BBKDisplay\\": "src/"
+      "AmiSMB\\BBKDisplay\\": "src/"
     }
   }
 }

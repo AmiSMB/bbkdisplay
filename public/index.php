@@ -1,11 +1,45 @@
 <?php
-putenv("CUBEX_ENV=development");
+
+use AmiSMB\BBKDisplay\Helpers\LogHelper;
 
 //Defining PHP_START will allow cubex to add an execution time header
 define('PHP_START', microtime(true));
 
 //Include the composer autoloader
 require_once dirname(__DIR__) . '/vendor/autoload.php';
+
+// Convert errors into exceptions
+function exception_error_handler($errno, $errstr, $errfile, $errline)
+{
+  if((error_reporting() & $errno) && !($errno & E_NOTICE))
+  {
+    $errfile = str_replace(dirname(__DIR__), '', $errfile);
+    throw new ErrorException($errstr, 0, $errno, $errfile, $errline);
+  }
+}
+
+// Log exceptions
+function exception_handler($e)
+{
+  $log = new LogHelper(LogHelper::CONSOLE, 'BBK Display');
+  $log->exception($e);
+}
+
+function shutdown()
+{
+  $log = new LogHelper(LogHelper::STDERR, 'BBK Display');
+  $error = error_get_last();
+  if($error['type'] === E_ERROR)
+  {
+    $log->error($error['message']);
+  }
+}
+
+set_error_handler("exception_error_handler");
+
+set_exception_handler("exception_handler");
+
+register_shutdown_function("shutdown");
 
 //Create an instance of cubex, with the web root defined
 $app = new \Cubex\Cubex(__DIR__);

@@ -67,9 +67,9 @@ class ComposerStaticInitc4a817f13352bc42d0a4db0448e56188
         array (
             'Cubex\\' => 6,
         ),
-        'B' => 
+        'A' => 
         array (
-            'BBKDisplay\\' => 11,
+            'AmiSMB\\BBKDisplay\\' => 18,
         ),
     );
 
@@ -186,7 +186,7 @@ class ComposerStaticInitc4a817f13352bc42d0a4db0448e56188
         array (
             0 => __DIR__ . '/..' . '/cubex/framework/src',
         ),
-        'BBKDisplay\\' => 
+        'AmiSMB\\BBKDisplay\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),

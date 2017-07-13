@@ -34,5 +34,5 @@ return array(
     'Eloquent\\Blox\\' => array($vendorDir . '/eloquent/blox/src'),
     'Doctrine\\Instantiator\\' => array($vendorDir . '/doctrine/instantiator/src/Doctrine/Instantiator'),
     'Cubex\\' => array($vendorDir . '/cubex/framework/src'),
-    'BBKDisplay\\' => array($baseDir . '/src'),
+    'AmiSMB\\BBKDisplay\\' => array($baseDir . '/src'),
 );

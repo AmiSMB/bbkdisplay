@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "af6c06120c523dfa386cd9eab6d8d563",
+    "content-hash": "705abedbdef7578c81d878c6c2fdb5c8",
     "packages": [
         {
             "name": "cubex/framework",
