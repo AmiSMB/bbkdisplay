@@ -1,0 +1,31 @@
+{
+  "name": "packaged/dispatch",
+  "description": "Asset Management Middleware for Stack PHP",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Brooke Bryan",
+      "email": "brooke@bajb.net"
+    }
+  ],
+  "bin": [
+    "bin/dispatch"
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "packaged/helpers": "~1.0",
+    "packaged/config": "~1.0",
+    "symfony/http-kernel": "~2.0",
+    "symfony/console": "~2.0",
+    "tedivm/jshrink": "~1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.5",
+    "satooshi/php-coveralls": "~0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Packaged\\Dispatch\\": "src"
+    }
+  }
+}
